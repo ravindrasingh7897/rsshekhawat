@@ -12,9 +12,9 @@ import "./css/globals.scss";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Ravindra Singh Shekhawat - Full Stack Developer & UI/UX Designer",
+  title: "Ravindra Singh Shekhawat - Full Stack Developer",
   description: "Experienced Full Stack Developer specializing in React, Next.js, Node.js, and modern web technologies. Creating exceptional digital experiences with cutting-edge solutions.",
-  keywords: "Full Stack Developer, React Developer, Next.js, Node.js, JavaScript, TypeScript, UI/UX Designer, Web Developer, Software Engineer, Ravindra Singh Shekhawat",
+  keywords: "Full Stack Developer, React Developer, Next.js, Node.js, JavaScript, TypeScript, Web Developer, Software Engineer, Ravindra Singh Shekhawat",
   authors: [{ name: "Ravindra Singh Shekhawat" }],
   creator: "Ravindra Singh Shekhawat",
   publisher: "Ravindra Singh Shekhawat",

@@ -18,7 +18,7 @@ export const projectsData = [
         tools: ['Socket.io', 'NestJS', "Express.js", "NestJS", "TypeScript", "Tailwind CSS"],
         role: 'Full Stack Developer',
         code: 'https://github.com/ravindrasingh7897/mypoll',
-        demo: 'mypoll-beryl.vercel.app',
+        demo: 'https://mypoll-beryl.vercel.app/',
         image: getAssetPath('/image/mp.png'),
     },
     {
@@ -28,7 +28,7 @@ export const projectsData = [
         tools: ['React', 'Bootstrap', 'Stripe', 'Express', 'JWT', 'MongoDB'],
         code: '-',
         role: 'Full Stack Developer',
-        demo: 'https://travelhub-app.vercel.app',
+        demo: 'https://travel-hub-ruddy.vercel.app/home',
         image: getAssetPath('/image/th.png'),
     },
     {

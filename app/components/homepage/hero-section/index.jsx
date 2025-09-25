@@ -13,7 +13,7 @@ import { SiCodeforces, SiLeetcode } from "react-icons/si";
 import { useState, useEffect, useMemo } from "react";
 
 function TypingEffect() {
-  const designations = useMemo(() => ["Full Stack Developer", "UI/UX Designer", "Problem Solver"], []);
+  const designations = useMemo(() => ["Software Developer", "Coding Enthusiast", "Problem Solver", "Full Stack Developer"], []);
   const [currentDesignation, setCurrentDesignation] = useState(0);
   const [currentText, setCurrentText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -171,9 +171,15 @@ function HeroSection() {
               </button>
             </Link>
 
-            <Link className="flex items-center gap-2 hover:gap-3 rounded-full border-2 border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 px-6 py-3 md:px-8 md:py-4 text-center text-sm font-medium uppercase tracking-wider text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white no-underline transition-all duration-200 ease-out md:font-semibold" role="button" target="_blank" href={personalData.resume}>
-              <MdDownload size={16} />
-              <span>Download Resume</span>
+            <Link 
+              href={personalData.resume}
+              target="_blank"
+              className="bg-gradient-to-r to-pink-500 from-violet-600 p-[1px] rounded-full transition-all duration-300 hover:from-pink-500 hover:to-violet-600"
+            >
+              <button className="px-6 py-3 md:px-8 md:py-4 bg-white dark:bg-black rounded-full border-none text-center text-sm font-medium uppercase tracking-wider text-gray-800 dark:text-white no-underline transition-all duration-200 ease-out md:font-semibold flex items-center gap-2 hover:gap-3">
+                <MdDownload size={16} />
+                <span>Download Resume</span>
+              </button>
             </Link>
           </div>
 
