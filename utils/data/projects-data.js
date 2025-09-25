@@ -1,3 +1,5 @@
+import { getAssetPath } from '../asset-path';
+
 export const projectsData = [
     {
         id: 1,
@@ -7,7 +9,7 @@ export const projectsData = [
         role: 'Fullstack Developer',
         code: 'https://github.com/ravindrasingh7897/SkillsOn-Frontend',
         demo: 'https://skills-on-frontend.vercel.app/',
-        image: '/image/hp.png',
+        image: getAssetPath('/image/hp.png'),
     },
     {
         id: 2,
@@ -17,7 +19,7 @@ export const projectsData = [
         role: 'Full Stack Developer',
         code: 'https://github.com/ravindrasingh7897/mypoll',
         demo: 'mypoll-beryl.vercel.app',
-        image: '/image/mp.png',
+        image: getAssetPath('/image/mp.png'),
     },
     {
         id: 3,
@@ -27,7 +29,7 @@ export const projectsData = [
         code: '-',
         role: 'Full Stack Developer',
         demo: 'https://travelhub-app.vercel.app',
-        image: '/image/th.png',
+        image: getAssetPath('/image/th.png'),
     },
     {
         id: 4,
@@ -37,7 +39,7 @@ export const projectsData = [
         code: 'https://github.com/ravindrasingh7897/coin_trackr',
         demo: 'https://cointrackr-rss-projects-446bee74.vercel.app/',
         role: 'Full Stack Developer',
-        image: '/image/ct.png',
+        image: getAssetPath('/image/ct.png'),
     }
 ];
 
