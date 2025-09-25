@@ -1,6 +1,18 @@
 const path = require('path')
- 
+
+/**
+ * @type {import('next').NextConfig}
+ */
 module.exports = {
+  // Enable static export for GitHub Pages
+  output: 'export',
+  trailingSlash: true,
+  skipTrailingSlashRedirect: true,
+  
+  // GitHub Pages configuration
+  basePath: process.env.NODE_ENV === 'production' ? '/rsshekhawat' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/rsshekhawat/' : '',
+  
   // Performance optimizations
   experimental: {
     optimizePackageImports: ['react-icons', 'lottie-react'],
@@ -10,31 +22,9 @@ module.exports = {
   compress: true,
   poweredByHeader: false,
   
-  // Image optimization
+  // Image optimization (disabled for static export)
   images: {
-    formats: ['image/webp', 'image/avif'],
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-    minimumCacheTTL: 31536000, // 1 year
-    dangerouslyAllowSVG: true,
-    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'res.cloudinary.com',
-        pathname: '**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'media.dev.to',
-        pathname: '**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'media2.dev.to',
-        pathname: '**',
-      },
-    ],
+    unoptimized: true,
   },
   
   // SASS options
