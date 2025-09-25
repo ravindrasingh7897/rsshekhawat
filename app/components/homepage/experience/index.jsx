@@ -1,8 +1,9 @@
 "use client";
 // @flow strict
 
-import { experiences } from "@/utils/data/experience";
-import Image from "next/image";
+import { experiences } from '@/utils/data/experience';
+import { getAssetPath } from '@/utils/asset-path';
+import Image from 'next/image';
 import { BsPersonWorkspace } from "react-icons/bs";
 import { HiOutlineAcademicCap } from "react-icons/hi";
 import experience from '../../../assets/lottie/code.json';
@@ -13,7 +14,7 @@ function Experience() {
   return (
     <div id="experience" className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
       <Image
-        src="/section.svg"
+        src={getAssetPath("/section.svg")}
         alt="Section Background"
         width={1572}
         height={795}
@@ -52,7 +53,7 @@ function Experience() {
                       <GlowCard identifier={`experience-${experience.id}`}>
                         <div className="p-3 relative hover:scale-[1.02] transition-all duration-300">
                           <Image
-                            src="/blur-23.svg"
+                            src={getAssetPath("/blur-23.svg")}
                             alt="Blur Effect"
                             width={1080}
                             height={200}

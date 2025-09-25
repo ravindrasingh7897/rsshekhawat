@@ -1,6 +1,7 @@
 // @flow strict
-import { educations } from "@/utils/data/educations";
-import Image from "next/image";
+import { educations } from '@/utils/data/educations';
+import { getAssetPath } from '@/utils/asset-path';
+import Image from 'next/image';
 import { BsPersonWorkspace } from "react-icons/bs";
 import lottieFile from '../../../assets/lottie/study.json';
 import AnimationLottie from "../../helper/animation-lottie";
@@ -10,7 +11,7 @@ function Education() {
   return (
     <div id="education" className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
       <Image
-        src="/section.svg"
+        src={getAssetPath("/section.svg")}
         alt="Hero"
         width={1572}
         height={795}
@@ -53,7 +54,7 @@ function Education() {
                       <GlowCard identifier={`education-${education.id}`}>
                         <div className="p-3 relative hover:scale-[1.02] transition-all duration-300">
                           <Image
-                            src="/blur-23.svg"
+                            src={getAssetPath("/blur-23.svg")}
                             alt="Hero"
                             width={1080}
                             height={200}

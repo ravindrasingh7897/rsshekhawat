@@ -1,6 +1,7 @@
 // @flow strict
 
 import { personalData } from "@/utils/data/personal-data";
+import { getAssetPath } from "@/utils/asset-path";
 import Image from "next/image";
 
 
@@ -8,7 +9,7 @@ function AboutSection() {
   return (
     <div id="about" className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
       <Image
-        src="/section.svg"
+        src={getAssetPath("/section.svg")}
         alt="Section Background"
         width={1572}
         height={795}

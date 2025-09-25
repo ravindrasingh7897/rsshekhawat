@@ -2,6 +2,7 @@
 'use client';
 
 import { personalData } from "@/utils/data/personal-data";
+import { getAssetPath } from "@/utils/asset-path";
 import Image from "next/image";
 import Link from "next/link";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
@@ -116,7 +117,7 @@ function HeroSection() {
   return (
     <section className="relative flex flex-col items-center justify-center py-4 lg:py-12 min-h-screen pt-20">
       <Image
-        src="/hero.svg"
+        src={getAssetPath("/hero.svg")}
         alt="Hero Background"
         width={1572}
         height={795}
