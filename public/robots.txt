@@ -1,0 +1,28 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://your-domain.com/sitemap.xml
+
+# Specific crawl delays for performance
+Crawl-delay: 1
+
+# Block unnecessary files
+Disallow: /*.json
+Disallow: /*.scss
+Disallow: /*.js.map
+Disallow: /node_modules/
+
+# Allow important assets
+Allow: /images/
+Allow: /assets/
+Allow: /public/
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.png
+Allow: /*.gif
+Allow: /*.svg
+Allow: /*.webp
+Allow: /*.css
+Allow: /*.js
