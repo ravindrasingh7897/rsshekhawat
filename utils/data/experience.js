@@ -4,7 +4,7 @@ export const experiences = [
     title: 'Tech Lead (Full-Stack Intern)',
     company: "SkillsOn",
     duration: "(March 2025 - Present)",
-    certificate: "https://drive.google.com/file/d/1dXhox30DXVA1XwPkMr_axnYy9yExmeop/view?usp=sharing" // Your actual certificate
+    certificate: "https://drive.google.com/file/d/1QqAj2HChzH8lxgRkcnUr4hkgXWQtLMB9/view?usp=sharing" // Your actual certificate
   },
   {
     id: 2,
